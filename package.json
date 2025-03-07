@@ -15,6 +15,7 @@
     "@biomejs/biome": "1.9.4",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
+    "vite-plugin-pwa": "^0.21.1",
     "vite-plugin-singlefile": "^2.1.0"
   }
 }
