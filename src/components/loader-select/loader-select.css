@@ -1,0 +1,25 @@
+.loader-select-container {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.loader-select,
+.version-input {
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid #2c313a;
+	background: #1e2127;
+	color: #e2e8f0;
+	font-size: 14px;
+}
+
+.version-input {
+	width: 100px;
+}
+
+.loader-select:focus,
+.version-input:focus {
+	outline: none;
+	border-color: #60a5fa;
+}

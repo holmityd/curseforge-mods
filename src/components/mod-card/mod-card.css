@@ -1,0 +1,69 @@
+.mod-container {
+	background: #1e2127;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s, box-shadow 0.2s;
+	overflow: hidden;
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+	}
+
+	.mod-logo {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		border-bottom: 1px solid #2c313a;
+	}
+
+	.mod-name {
+		display: block;
+		padding: 0.5rem;
+		font-size: 1rem;
+		color: #e2e8f0;
+		text-decoration: none;
+		font-weight: 600;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.mod-version,
+	.mod-update {
+		padding: 0.25rem 0.5rem;
+		color: #a0aec0;
+		font-size: 0.8rem;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.mod-logo-link {
+		display: block;
+		cursor: pointer;
+	}
+
+	.mod-download {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid rgba(44, 49, 58, 0.8);
+		background: rgba(40, 44, 52, 0.8);
+		color: #e2e8f0;
+		cursor: pointer;
+		transition: color 0.2s;
+
+		&:hover {
+			border-color: rgba(96, 165, 250, 0.8);
+			background: rgba(40, 44, 52, 0.8);
+		}
+	}
+}
