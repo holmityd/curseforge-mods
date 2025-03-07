@@ -10,6 +10,11 @@
 		box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 	}
 
+	&.failed {
+		background-color: rgb(255, 56, 56, 0.1);
+		border-color: rgb(255, 56, 56);
+	}
+
 	.mod-logo {
 		width: 100%;
 		height: 200px;

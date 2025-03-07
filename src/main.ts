@@ -63,7 +63,8 @@ async function initializeApp() {
 	});
 	document.body.insertBefore(headerComponent, state.container);
 
-	addModInfo(974356);
+	addModInfo(983756);
+	addModInfo(890301);
 }
 
 initializeApp();

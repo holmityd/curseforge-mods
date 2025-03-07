@@ -1,5 +1,6 @@
 import type { ModDetails } from '../../curseforge';
 import { download } from '../../utils/download';
+import { downloadFailed } from '../../state';
 import './mod-card.css';
 
 interface ModCardProps {
@@ -72,6 +73,10 @@ export function ModCardComponent({ details: { data } }: ModCardProps) {
 
 	const container = document.createElement('div');
 	container.className = 'mod-container';
+
+	downloadFailed.subscribe((ids) =>
+		container.classList.toggle('failed', ids.has(data.id)),
+	);
 
 	container.append(
 		createLogoSection(),
